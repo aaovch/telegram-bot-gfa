@@ -6,11 +6,15 @@ import random
 from datetime import time, timezone, timedelta
 from telegram.error import TelegramError
 from telegram import Update
+import os
+from dotenv import load_dotenv
 
+# Загрузка переменных окружения из файла .env
+load_dotenv()
 # Настройка токена и ID чата
-TOKEN = '7849001475:AAGv_0_A3a-PUTvKdipeHpEXlWfnqqrZojE'
-CHAT_ID = '-4674638703'
-
+TOKEN = os.getenv('TOKEN')
+CHAT_ID = os.getenv('CHAT_ID')
+    
 # Устанавливаем логирование
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
