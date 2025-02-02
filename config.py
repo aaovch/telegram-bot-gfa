@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 TOKEN: str | None = os.getenv('TOKEN')
-CHAT_ID: str | None = os.getenv('CHAT_ID_TEST')
+CHAT_ID: str | None = os.getenv('CHAT_ID')
 STATE_FILE: Path = Path('state.json')
 MESSAGES_DIR: Path = Path('messages_lists')
 
