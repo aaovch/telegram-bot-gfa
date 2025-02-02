@@ -36,7 +36,7 @@ TIRED_BOT_MESSAGES = [
 ]
 
 # Параметры ограничения: 30 минут между отправками
-RATE_LIMIT = timedelta(minutes=30)
+RATE_LIMIT = timedelta(minutes=1)
 last_message_time: Optional[datetime] = None  # время последней отправки сообщения
 
 
